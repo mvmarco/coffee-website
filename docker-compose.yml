@@ -1,5 +1,6 @@
 lighttpd:
   image: sebp/lighttpd
+  tty: true
   volumes:
     - ./src:/var/www/localhost/htdocs
   ports:

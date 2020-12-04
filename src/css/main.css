@@ -1,9 +1,145 @@
-body{
-    background: linear-gradient(rgb(100,50,50), rgb(80,20,20)) no-repeat;
-    color: white;
-    text-align: center;
+@import "navbar.css";
+@import "footer.css";
+
+/* cover image section */
+
+.jumbotron {
+  background-image: url("../img/coffee1.jpg");
+  background-size: cover;
+  height: 80vh;
+  background-position: center;
 }
 
-img{
-    margin: 1%;
+.cover {
+  background-color: #111111;
+  color: #646668f3;
+}
+
+.cover h3 q {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.social-links a {
+  background-color: #303234;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  display: inline-block;
+  margin: 0.2em;
+}
+.social-links a i {
+  color: #bab8b6;
+  font-size: 1.3em;
+  padding: 0.5em 0.5em;
+}
+
+/* articles section  */
+
+.information {
+  background: linear-gradient(rgb(228, 225, 224), white);
+}
+
+.card-article .card-article-infos {
+  padding: 16px;
+}
+
+#more {
+  display: none;
+}
+
+.card-article {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: flex-start;
+}
+
+.card-article img {
+  height: 100%;
+  width: 200px;
+}
+
+.card-article p {
+  line-height: 1.4;
+}
+
+.card-article {
+  position: relative;
+}
+
+.card-article > div > div {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+@media (max-width: 992px) {
+  .information {
+    display: block;
+    text-align: center;
+    padding-top: 1rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .social .quote h3 q {
+    font-size: 1.25rem;
+    text-align: center;
+    display: inline-block;
+  }
+  .section-articles,
+  .social {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-links {
+    padding-top: 1rem;
+  }
+
+  .jumbotron {
+    height: 40vh;
+    background-position: center;
+  }
+
+  .card-article {
+    display: block;
+    text-align: center;
+    position: relative;
+  }
+
+  .card-article > div > div {
+    position: absolute;
+    bottom: 20px;
+    right: 34%;
+    display: inline-block;
+    justify-content: center;
+    width: 100%;
+    left: 0;
+  }
+  .card-article img {
+    height: 100%;
+    width: 150px;
+  }
+  .card-article p {
+    line-height: 1.2;
+    font-size: 0.9rem;
+    padding-bottom: 50px;
+  }
+
+  .card-article h4 {
+    line-height: 1.2;
+    font-size: 1.2rem;
+  }
+
+  .information {
+    display: block;
+    text-align: center;
+  }
+
+  .information h3 {
+    line-height: 1.2;
+    font-size: 1.6rem;
+  }
 }
