@@ -1,29 +1,8 @@
-# README #
+# FEATURES #
+responsiveness Applied responsiveness as follow: Mobile - 375px Tablet - 768px Desktop - 1200px 
 
-This README would normally document whatever steps are necessary to get your application up and running.
+Search functionality: You can search through the content of the articles of the page and highlight the result. Slider: random image every time the page is refreshed are displayed. There are only 3 images so if it is the same: reload:-) 
 
-### What is this repository for? ###
+Read more button: A click event to show the rest of the text of each article. 
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
-
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+Pagination : You can navigate through 15 articles. Click next:-) 
